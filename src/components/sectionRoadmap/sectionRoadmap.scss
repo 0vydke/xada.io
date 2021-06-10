@@ -1,0 +1,58 @@
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Comfortaa', cursive !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: white;
+  font-size: 18px !important;
+}
+.swiper-button-next:after{
+  content: '\e649' !important;
+  font-family: themify !important;
+}
+.swiper-button-prev:after{
+  content: '\e64a' !important;
+  font-family: themify !important;
+}
+.swiper-button-next, .swiper-container-rtl, .swiper-button-prev{
+  position: absolute;
+  top: 13% !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(45deg, #BF68E6, #9E48CD);
+  color: #FFFFFF;
+  padding: 17px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 0 rgba(255,95,43,0.6);
+  z-index: 9;
+  opacity: 1 !important;
+}
+.swiper-button-next{
+  right: 0px !important;
+}
+.swiper-button-prev{
+  left: 0px !important;
+}
+.swiper-container{
+  padding-top: 16px !important;
+}
+@media screen and (max-width: 992px) {
+  .roadmap .timestamp.active span:after,.roadmap .timestamp span:after{
+    left: 47.1% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .roadmap .timestamp.active span:after{
+    left: 48.5% !important;
+  }
+  .roadmap .timestamp span:after{
+    left: 49% !important;
+  }
+  .swiper-button-next, .swiper-container-rtl, .swiper-button-prev{
+    top: 9% !important;
+  }
+}

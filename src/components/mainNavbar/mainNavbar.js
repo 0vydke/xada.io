@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/x-logo.png';
 import '../../assets/style/style.scss';
 import '../../assets/style/theme/bootstrap.css';
 import '../../assets/style/theme/template-3d-animation.css';
@@ -11,7 +11,21 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link, animateScroll as scroll } from "react-scroll";
+const style = { 
+  s1: {animationDelay: "1s", opacity: 1},
+  s2: {animationDelay: "1.1s", opacity: 1},
+  s3: {animationDelay: "1.2s", opacity: 1},
+  s4: {animationDelay: "1.3s", opacity: 1},
+  s5: {animationDelay: "1.4s", opacity: 1},
+  s6: {animationDelay: "1.5s", opacity: 1},
+  s7: {animationDelay: "1.6s", opacity: 1},
+  s8: {animationDelay: "1.7s", opacity: 1}
+}
+
+const navbarTitle = (<span><span style={{marginRight: "2px"}} className="flag-icon flag-icon-us"></span>EN</span>);
+
 export default class MainNavbar extends React.Component {
 
   constructor(props) {
@@ -23,68 +37,71 @@ export default class MainNavbar extends React.Component {
   }
   render(){
     return (
-      <Navbar variant="dark" className={`main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1 ${ this.props.scrollTop }`}>
+      <Navbar variant="dark" className={`main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1 ${ this.props.scrollTop }`} expand="lg">
         <div className="container">
-          <Navbar.Brand href="#home" className="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s">
-              <img src={logo} alt="Crypto Logo"/>
-              <span className="brand-text"><span className="font-weight-bold">Crypto</span> ICO</span>
-          </Navbar.Brand>
-          <Navbar.Toggle className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"/>
-          <Nav className="collapse navbar-collapse" id="navbarCollapse">
-          <div id="navigation" className="navbar-nav ml-auto">
-            <ul className="navbar-nav mt-1">
-                <li className="nav-item " data-animation="fadeInDown">
-                  <Nav.Link className="nav-link" href="index.html#about">What is ICO</Nav.Link>
-                </li>
-              <li className="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.2s">
-                <Nav.Link className="nav-link" href="index.html#about">Solutions</Nav.Link>
-              </li>
-              <li className="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.3s">
-                <Nav.Link className="nav-link" href="index.html#about">Whitepaper</Nav.Link>
-              </li>
-              <li className="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.4s">
-                <Nav.Link className="nav-link" href="index.html#about">Token Sale</Nav.Link>
-              </li>
-              <li className="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.5s">
-                <Nav.Link className="nav-link" href="index.html#about">Roadmap</Nav.Link>
-              </li>
-            
-              <li className="dropdown show animated" data-animation="fadeInDown" data-animation-delay="1.6s">
-                <Dropdown>
-                {/* onMouseLeave={() => this.setState({ showDropdown1: false})}
-                onMouseOver={() => this.setState({ showDropdown1: true})}> */}
-                    <Dropdown.Toggle className="dropdown-toggle white" href="#" role="button" id="more" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</Dropdown.Toggle>
-                    <Dropdown.Menu show={this.state.showDropdown1} className="dropdown-menu" aria-labelledby="more">
-                        <Dropdown.Item className="dropdown-item" href="index.html#mobile-app">App</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="index.html#team">Team</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="index.html#faq">FAQ</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="index.html#contact">Contact</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="template-404.html">404</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="template-inner-page-with-sidebar.html">Sample Page</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-              </li>
-              <li className="dropdown show mr-4 animated" data-animation="fadeInDown" data-animation-delay="1.7s">
-                <Dropdown>
-                  <Dropdown.Toggle className="dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span className="flag-icon flag-icon-us"></span> EN</Dropdown.Toggle>
-                  <Dropdown.Menu 
-                  onMouseLeave={() => this.setState({ showDropdown2: false})}
-                  show={this.state.showDropdown2} 
-                  className="dropdown-menu"
-                  >
-                    <Dropdown.Item className="dropdown-item" href="#"><span className="flag-icon flag-icon-de"></span> GN</Dropdown.Item>
-                    <Dropdown.Item className="dropdown-item" href="#"><span className="flag-icon flag-icon-es"></span> SP</Dropdown.Item>
-                    <Dropdown.Item className="dropdown-item" href="#"><span className="flag-icon flag-icon-mq"></span> FR</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </li>
-              </ul>
-              <span id="slide-line"></span>
-              <Form className="form-inline mt-2 mt-md-0">
-                  <Button className="btn btn-sm btn-gradient-purple btn-glow my-2 my-sm-0 animated" data-animation="fadeInDown" data-animation-delay="1.8s" href="https://pixinvent.com/demo/crypto-ico-admin/html/ltr/vertical-menu/account-login.html" target="_blank">Sign in</Button>
-              </Form>
-            </div>
+            <Navbar.Brand href="#home" className="navbar-brand animate__animated animate__fadeInDown" style={style.s1}>
+                <img src={logo} className="logo-invert" alt="Crypto Logo"/>
+                <span className="brand-text"><span className="font-weight-bold"></span>xada</span>
+            </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="navbar-nav ml-auto" id="navbarCollapse">
+            <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s2} href="#about">About</Nav.Link>
+            </Link>
+            <Link
+            activeClass="active"
+            to="problem-solution"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s3} href="#problem-solution">Solutions</Nav.Link>
+            </Link>
+            <Link
+            activeClass="active"
+            to="roadmap"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s4} href="#roadmap">Roadmap</Nav.Link>
+            </Link>
+            <Link
+            activeClass="active"
+            to="token-distribution"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s5} href="#token-distribution">Token</Nav.Link>
+            </Link>
+            <Link
+            activeClass="active"
+            to="team"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s6} href="#team">Team</Nav.Link>
+            </Link>
+            <Link
+            activeClass="active"
+            to="faq"
+            spy={true}
+            smooth={true}
+            duration={500}
+            >
+              <Nav.Link className="nav-link animate__animated animate__fadeInDown" style={style.s7} href="#faq">FAQ</Nav.Link>
+            </Link>
           </Nav>
+          </Navbar.Collapse>
           </div>
         </Navbar>
     );

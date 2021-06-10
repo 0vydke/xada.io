@@ -1,0 +1,70 @@
+{
+    "people": [
+      {
+        "id": 1,
+        "name": "Logan S. Perez",
+        "role": "CEO & CFO",
+        "img": "9",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      },
+      {
+        "id": 2,
+        "name": "Susan J. Newsom",
+        "role": "Graphic Designer",
+        "img": "6",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      },
+      {
+        "id": 3,
+        "name": "Mary J. Wardle",
+        "role": "CPO",
+        "img": "2",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      },
+      {
+        "id": 4,
+        "name": "Nicholas M. Sharpe",
+        "role": "UI / UX Designer",
+        "img": "10",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      },
+      {
+        "id": 5,
+        "name": "Cecelia T. Carter",
+        "role": "CTO",
+        "img": "4",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      },
+      {
+        "id": 6,
+        "name": "Terry T. Robinette",
+        "role": "Developer",
+        "img": "13",
+        "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
+        "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
+        "skill1": "85%",
+        "skill2": "90%",
+        "skill3": "75%"
+      }
+    ]
+  }

@@ -2368,7 +2368,7 @@ svg#loader g:last-child circle {
   transition: 0.3s;
 }
 .scrolled{
-  background: #194089;
+  background: #0b2046;
   padding: 12px 0px !important;
   transition: 0.3s;
 }
@@ -2382,12 +2382,18 @@ svg#loader g:last-child circle {
   position : relative;
   top : 2px;
   font-weight : 300;
-  text-transform : uppercase;
 }
-.navbar.navbar-dark {
+.navbar.navbar-dark,.navbar-collapse.collapse.show {
   min-height : 65px;
+  transition: 0.2s;
 }
-.navbar.navbar.navbar-dark .container{
+@media (max-width: 991.98px){
+  .navbar.navbar-dark,.navbar-collapse.collapse.show {
+    background: #102E65;
+    transition: 0.2s;
+  }
+}
+.navbar .container{
   max-height: 50px;
 }
 .navbar.navbar-absolute {
@@ -2406,7 +2412,7 @@ svg#loader g:last-child circle {
 .navbar ul.navbar-nav li{
   display:flex;
 }
-.navbar ul.navbar-nav li .nav-link {
+.navbar .navbar-nav li .nav-link {
   font-size : 0.8rem;
   color : #FFFFFF;
   font-weight : 700;
@@ -2559,7 +2565,7 @@ header .navbar.navbar-shadow {
 }
 .head-area .head-content h1 {
   color : #FFFFFF;
-  font-size : 1.9rem;
+  font-size : 1.8rem;
   line-height : 2.75rem;
   font-weight : 700;
 }
@@ -3236,7 +3242,7 @@ header .navbar.navbar-shadow {
 .faq .tab-content .card {
   margin-bottom : 0.75rem;
   border : 1px solid #EEECF4;
-  border-radius : 0.5rem;
+  border-radius : 0.5rem !important;
 }
 .faq .tab-content .card .card-header {
   background-color : transparent;
@@ -3246,7 +3252,7 @@ header .navbar.navbar-shadow {
 }
 .faq .tab-content .card .card-header .btn-link {
   font-weight : 700;
-  margin : 6px 2.25rem 0 2.9rem;
+  /* margin : 6px 2.25rem 0 2.9rem; */
   padding : 0.375rem 0.75rem;
   text-align : left;
   white-space : unset;
@@ -3417,6 +3423,7 @@ header .navbar.navbar-shadow {
 }
 .footer .footer-wrapper .logo-text {
   font-size : 1.5rem;
+  margin-left: 5px;
 }
 .footer .footer-wrapper ul.useful-links {
   padding : 0;
@@ -4044,28 +4051,52 @@ body.inner-page {
 }
 
 #svg-animation .cic-logo-animation {
-  -webkit-animation : updown_logo 4s ease infinite;
-     -moz-animation : updown_logo 4s ease infinite;
-       -o-animation : updown_logo 4s ease infinite;
-          animation : updown_logo 4s ease infinite;
+  -webkit-animation : fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
+     -moz-animation : fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
+       -o-animation : fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
+          animation : fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
 }
 
 #svg-animation .svg-elements-1-animation {
-  -webkit-animation : updown1 3s ease 2;
-     -moz-animation : updown1 3s ease 2;
-       -o-animation : updown1 3s ease 2;
-          animation : updown1 3s ease 2;
+  -webkit-animation : updown1 4s ease 2;
+     -moz-animation : updown1 4s ease 2;
+       -o-animation : updown1 4s ease 2;
+          animation : updown1 4s ease 2;
 }
 
 #svg-animation .svg-elements-2-animation {
-  -webkit-animation : updown2 2s ease 2;
-     -moz-animation : updown2 2s ease 2;
-       -o-animation : updown2 2s ease 2;
-          animation : updown2 2s ease 2;
+  -webkit-animation : updown2 5s ease 2;
+     -moz-animation : updown2 5s ease 2;
+       -o-animation : updown2 5s ease 2;
+          animation : updown2 5s ease 2;
 }
-
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes updown_logo {
   0% {
+    opacity: 0;
     -webkit-transform : translateY(0px);
             transform : translateY(0px);
   }
@@ -4378,7 +4409,7 @@ header .navbar.navbar-fixed {
 }
 
 p {
-  color : #C7B8FF;
+  color : #FFF;
 }
 
 .dark-bg-text-color {

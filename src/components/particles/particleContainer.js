@@ -60,7 +60,7 @@ export default class ParticleContainer extends React.Component {
                 enable: true,
                 value_area: 800,
               },
-              value: 30,
+              value: 40,
             },
             opacity: {
               value: 0.5,
@@ -70,7 +70,7 @@ export default class ParticleContainer extends React.Component {
             },
             size: {
               random: true,
-              value: 3,
+              value: 4,
             },
           },
           detectRetina: true,

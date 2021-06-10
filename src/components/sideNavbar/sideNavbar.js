@@ -20,16 +20,6 @@ export default class SideNavbar extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="midnightHeader white">
-          <div className="midnightInner">
-            <ul>
-                <li><a href="#"><i className="fa fa-telegram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i className="fa fa-medium" aria-hidden="true"></i></a></li>
-                <li><a href="#"> <i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i className="fa fa-github" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-        </div>
       </nav>
     );
   }

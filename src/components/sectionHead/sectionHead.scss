@@ -1,10 +1,40 @@
 h1,h3{
   font-family: 'Comfortaa', cursive !important;
 }
+.bubble-img{
+  height: 450px;
+  margin: auto;
+}
+.rotate-animation{
+  -webkit-animation: rotate-center 100s linear infinite both;
+  animation: rotate-center 100s linear infinite both;
+}
+
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .head-area .head-content{
   h1{
     color: #FFFFFF;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     line-height: 2.75rem;
     font-weight: 700;
   }

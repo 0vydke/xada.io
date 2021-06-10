@@ -1,0 +1,136 @@
+h1,h2,h3,h4,h5,h6,p,span{
+  font-family: 'Comfortaa', cursive !important;
+}
+
+.footer {
+  padding-bottom: 40px !important;
+  padding-top: 60px !important;
+  background-image: unset;
+  display: flex;
+  .container{
+    margin: auto;
+  }
+}
+
+.footer .logo {
+  margin-bottom: 16px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  transition: opacity .4s;
+  position: relative;
+  top: -3.5px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #5c6586;
+  margin-bottom: 25px;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.logo__title {
+  font-size: 27px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.footer .logo-invert{
+  width: 40px;
+  height: 40px;
+}
+.social-column{
+  display: flex;
+}
+.social-block{
+  margin:auto;
+}
+.social-block__title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: unset;
+}
+
+.social-list__item {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,.5);
+  position: relative;
+  -webkit-transition: border .4s;
+  -o-transition: border .4s;
+  transition: border .4s;
+  display: block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-list__link .social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.social-icon {
+  font-family: fontello;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  color: #fff;
+}
+#subscribe-form{
+  float: right;
+}
+.form__title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.subscribe__mail {
+  color: #aab2cd;
+}
+
+@media screen and (max-width: 992px) {
+  .social-block{
+    margin:unset;
+  }
+  #subscribe-form{
+    float:unset;
+  }
+}

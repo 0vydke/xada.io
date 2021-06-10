@@ -3,6 +3,10 @@ Geneva,
 Tahoma,
 sans-serif;
 $base-color: #282c34;
+.logo-invert{
+    filter: invert(1);
+    height: 30px;
+}
 .colorFliper,
 .counter {
     font-family: $base-font;
@@ -10,7 +14,22 @@ $base-color: #282c34;
     display: flex;
     justify-content: center;
 }
-
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 0.8rem;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 0.21rem 0.95rem;
+    text-decoration: none;
+    line-height: 30px;
+}
+.navbar-toggler.collapsed, .navbar-toggler{
+    position: absolute !important;
+    width: 65px !important;
+    background: none !important;
+    right: 10px !important;
+    padding: 0px !important;
+}
 .container {
     margin: auto;
     h3 {
