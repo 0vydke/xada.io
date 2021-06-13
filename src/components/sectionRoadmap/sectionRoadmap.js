@@ -1,10 +1,10 @@
-
 import React from 'react';
 import './sectionRoadmap.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import "swiper/components/navigation/navigation.min.css"
 import SwiperCore, { Navigation } from 'swiper/core';
+import line from '../../assets/images/line.jpg';
 SwiperCore.use([Navigation]);
 const style = { 
     s1: {animationDelay: "0.3s", opacity: 1},
@@ -24,21 +24,40 @@ export default class SectionSolutions extends React.Component {
             <div class="container">
                 <div class="heading text-center">
                     <div class="animate__animated animate__fadeInUp" style={style.s1}>
-                        <h6 class="sub-title">Implementation</h6>
+                        <div className="title-div">
+                        <img src={line} className="title-line"/>
                         <h2 class="title">Roadmap</h2>
+                        <img src={line} className="title-line"/>
+                        </div>
                     </div>
-                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>We have developed an ambitious roadmap and we promise to our community 
-                        <br class="d-none d-xl-block"/>that we will not rest until we cross off every item on that list.</p>
+                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>
+                        <br class="d-none d-xl-block"/>
+                        <br class="d-none d-xl-block"/>
+                    </p>
                 </div>
                 <div class="row animate__animated animate__fadeInUp" style={style.s3}>
                     <div class="col-12">
                         <div class="roadmap-container">
                         <Swiper
+                        breakpoints={{
+                            // when window width is >= 991px
+                            991: {
+                            width: 991,
+                            slidesPerView: 2,
+                            },
+                            // when window width is >= 768px
+                            775: {
+                            width: 770,
+                            slidesPerView: 1,
+                            },
+                            1200: {
+                            width: 1200,
+                            slidesPerView: 5,
+                            },
+                        }}
                         spaceBetween={0}
-                        slidesPerView={5}
+                        slidesPerView={1}
                         navigation={true}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                         className="swiper-container swiper-container-horizontal swiper-container-android">
                         <div class="swiper-wrapper timeline" style={style.s4}>
                         <SwiperSlide>
@@ -57,7 +76,7 @@ export default class SectionSolutions extends React.Component {
                                     <span class="date">2021 Q3</span>
                                 </div>
                                 <div class="status active">
-                                    <span>XADA Liquidity launch</span>
+                                    <span>XADA Liquidity <br/> launch</span>
                                     <span class="live">Live Now</span>
                                 </div>
                             </div>
@@ -68,7 +87,7 @@ export default class SectionSolutions extends React.Component {
                                     <span class="date">2021 Q3</span>
                                 </div>
                                 <div class="status remaining">
-                                    <span>XADA Swapping launch</span>
+                                    <span>XADA Swapping <br/> launch</span>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -37,11 +37,7 @@ function App() {
     <Router>
       <MainNavbar scrollTop={navScroll} />
       <div className="App">
-        <ParticleContainer/>
-        <ScrollAnimation animateIn='fadeIn'
-        animateOnce={true}>
           <SectionHead/>
-        </ScrollAnimation>
         <ScrollAnimation animateIn='fadeIn'
         animateOnce={true}>
           <SectionAbout aboutScroll={aboutScroll}/>

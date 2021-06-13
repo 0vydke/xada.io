@@ -45,7 +45,6 @@ export default class Footer extends React.Component {
                             xada
                         </div>
                     </a>
-                    <div class="copyright">© 2021, XADA</div>
                 </div>
                 <div class="col-lg-4 social-column">
                     <div class="social-block">
@@ -83,8 +82,8 @@ export default class Footer extends React.Component {
                     <form action="#" class="form subscribe" id="subscribe-form" novalidate="novalidate">
                     <div class="form__title">Contact Us</div>
                     <div class="form__row">
-                        <a class="subscribe__mail" href="mailto:contact@sale@xada.io">
-                            sale@xada.io
+                        <a class="subscribe__mail" href="mailto:contact@otc@xada.io">
+                            otc@xada.io
                         </a>
                     </div>
                     </form>

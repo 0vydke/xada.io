@@ -3,10 +3,49 @@ Geneva,
 Tahoma,
 sans-serif;
 $base-color: #282c34;
-.logo-invert{
+.logo-invert {
     filter: invert(1);
-    height: 30px;
+    height: 70px;
+    margin-top: 30px;
+    transition: 0.2s;
 }
+.scrolled .logo-invert{
+    height: 50px;
+    margin-top: 0px;
+    transition: 0.2s;
+}
+.navbar .brand-text{
+    top: 16px !important;
+    font-size: 26px;
+}
+.navbar-brand{
+    margin-top: 30px;
+}
+.scrolled .navbar-brand{
+    margin-top: 0px;
+}
+@media (max-width: 992px){
+    .logo-invert{
+        height: 50px;
+        margin-top: 0px;
+        transition: 0.2s;
+    }
+    .navbar-brand{
+        margin-top: 0px;
+    }
+    .brand-text{
+        top: 2px !important;
+        font-size: 20px;
+    }
+}
+.navbar.scrolled .brand-text{
+    top: 2px !important;
+    font-size: 20px;
+}
+.main-menu.static-top.navbar-dark.navbar.navbar-expand-lg.fixed-top {
+    padding: 20px 0px;
+}
+
 .colorFliper,
 .counter {
     font-family: $base-font;
@@ -14,22 +53,27 @@ $base-color: #282c34;
     display: flex;
     justify-content: center;
 }
-.navbar-dark .navbar-nav .nav-link{
+
+.navbar-dark .navbar-nav .nav-link {
     font-size: 0.8rem;
     color: #FFFFFF !important;
-    font-weight: 700;
     letter-spacing: 0.5px;
+    font-weight: 300;
+    margin: 0 20px;
     padding: 0.21rem 0.95rem;
     text-decoration: none;
     line-height: 30px;
 }
-.navbar-toggler.collapsed, .navbar-toggler{
+
+.navbar-toggler.collapsed,
+.navbar-toggler {
     position: absolute !important;
     width: 65px !important;
     background: none !important;
     right: 10px !important;
     padding: 0px !important;
 }
+
 .container {
     margin: auto;
     h3 {

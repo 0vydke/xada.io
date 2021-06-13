@@ -1,12 +1,7 @@
 
 import React from 'react';
 import './sectionTeam.scss';
-import user13 from '../../assets/images/user-13.png';
-import user10 from '../../assets/images/user-10.png';
-import user9 from '../../assets/images/user-9.png';
-import user6 from '../../assets/images/user-6.png';
-import user4 from '../../assets/images/user-4.png';
-import user2 from '../../assets/images/user-2.png';
+import line from '../../assets/images/line.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -40,8 +35,11 @@ export default class SectionTeam extends React.Component {
             <div class="container">
                 <div class="heading text-center">
                     <div class="animate__animated animate__fadeInUp" data-animation="fadeInUpShorter" data-animation-delay="0.3s" style={style.s6}>
-                        <h6 class="sub-title">Creative</h6>
+                        <div className="title-div">
+                        <img src={line} className="title-line"/>
                         <h2 class="title">Team</h2>
+                        <img src={line} className="title-line"/>
+                        </div>
                     </div>
                     <p class="content-desc animate__animated animate__fadeInUp" data-animation="fadeInUpShorter" data-animation-delay="0.4s" style={style.s7}>
                         We believe that by applying our team’s wealth of DeFi experience to XADA, we can create a 
@@ -75,7 +73,7 @@ export default class SectionTeam extends React.Component {
                                         <div class="name">{person.name}</div>
                                         <div class="role">{person.role}</div>
                                         <div class="social-profile mt-3">
-                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                                            <a href={person.link} target="_blank" title="Linkedin" class="font-medium grey-accent2 mr-2"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
                                             <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                                             <a href="#" title="Github" class="font-medium grey-accent2"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                                         </div>

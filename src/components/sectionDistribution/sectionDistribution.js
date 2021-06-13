@@ -1,7 +1,8 @@
 
 import React from 'react';
 import './sectionDistribution.scss';
-import chart from '../../assets/images/chart.png'
+import chart from '../../assets/images/chart.png';
+import line from '../../assets/images/line.jpg';
 const style = { 
     s1: {animationDelay: "0.3s", opacity: 1},
     s2: {animationDelay: "0.4s", opacity: 1},
@@ -25,21 +26,30 @@ export default class SectionDistribution extends React.Component {
             <div class="container">
                 <div class="heading text-center">
                     <div class="animate__animated animate__fadeInUp" style={style.s1}>
-                        <h6 class="sub-title">Token Stats</h6>
-                        <h2 class="title">Token Distribution</h2>
+                        <div className="title-div">
+                        <img src={line} className="title-line"/>
+                        <h2 class="title">Token distribution</h2>
+                        <img src={line} className="title-line"/>
+                        </div>
                     </div>
-                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>The ICO usually takes place before the project is completed, and helps fund the expenses
-                        <br class="d-none d-xl-block"/>undertaken by the founding team until launch. For some of the larger projects.</p>
+                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>
+                    The ICO usually takes place before the project is completed, and helps fund the expenses<br class="d-none d-xl-block"/>
+undertaken by the founding team until launch. For some of the larger projects.
+                    </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 pr-5">
-                        <div class="content-area">
+                    <div class="col-md-12 col-lg-6 pr-5"style={{display: 'flex'}}>
+                        <div class="content-area" style={{margin: 'auto'}}>
                             <h4 class="title animate__animated animate__fadeInUp" style={style.s3}>Details</h4>
-                            <p class="mt-1 animate__animated animate__fadeInUp" style={style.s4}>To calculate the number of tokens you’ll receive, you can follow the following formula. Note that this applies to public presale contributions only. If you participated through a syndicate or private presale,</p>
-                            <p class="animate__animated animate__fadeInUp" style={style.s5}>To calculate the number of tokens you’ll receive, you can follow the following formula. Note that this applies to public presale contributions only. If you participated through a syndicate or private presale,</p>
+                            <br/>
+                            <p class="mt-1 animate__animated animate__fadeInUp" style={style.s4}>To calculate the number of tokens you’ll receive, you can follow the
+                            following formula. Note that this applies to public presale contributions
+                            only. If you participated through a syndicate or private presale</p>
+                            <p class="animate__animated animate__fadeInUp" style={style.s5}>To calculate the number of tokens you’ll receive, you can follow the
+                            following formula. Note that this applies to public presale contributions
+                            only. If you participated through a syndicate or private presale</p>
                             <p class="animate__animated animate__fadeInUp" style={style.s6}><span>Symbol:</span> <strong class="grey-accent2">CIC</strong></p>
                             <p class="animate__animated animate__fadeInUp" style={style.s7}><span>Initial Value:</span> <strong class="grey-accent2">1 ETH = 3177.38 CIC</strong></p>
-                            <p class="animate__animated animate__fadeInUp" style={style.s8}><span>Type:</span> <strong class="grey-accent2">ERC20</strong></p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 move-first animate__animated animate__fadeInUp" style={style.s9}>
