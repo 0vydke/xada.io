@@ -20,35 +20,33 @@ export default class SectionSolutions extends React.Component {
       }
   render(){
     return (
-        <section id="roadmap" class="roadmap section-padding">
-            <div class="container">
-                <div class="heading text-center">
-                    <div class="animate__animated animate__fadeInUp" style={style.s1}>
+        <section id="roadmap" className="roadmap section-padding">
+            <div className="container">
+                <div className="heading text-center">
+                    <div className="animate__animated animate__fadeInUp" style={style.s1}>
                         <div className="title-div">
-                        <img src={line} className="title-line"/>
-                        <h2 class="title">Roadmap</h2>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
+                        <h2 className="title">Roadmap</h2>
+                        <img src={line} alt="blue line" className="title-line"/>
                         </div>
                     </div>
-                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>
-                        <br class="d-none d-xl-block"/>
-                        <br class="d-none d-xl-block"/>
+                    <p className="content-desc animate__animated animate__fadeInUp" style={style.s2}>
+                        <br className="d-none d-xl-block"/>
+                        <br className="d-none d-xl-block"/>
                     </p>
                 </div>
-                <div class="row animate__animated animate__fadeInUp" style={style.s3}>
-                    <div class="col-12">
-                        <div class="roadmap-container">
+                <div className="row animate__animated animate__fadeInUp" style={style.s3}>
+                    <div className="col-12">
+                        <div className="roadmap-container">
                         <Swiper
                         breakpoints={{
-                            // when window width is >= 991px
                             991: {
                             width: 991,
-                            slidesPerView: 2,
+                            slidesPerView: 2.5,
                             },
-                            // when window width is >= 768px
                             775: {
                             width: 770,
-                            slidesPerView: 1,
+                            slidesPerView: 2.5,
                             },
                             1200: {
                             width: 1200,
@@ -59,60 +57,70 @@ export default class SectionSolutions extends React.Component {
                         slidesPerView={1}
                         navigation={true}
                         className="swiper-container swiper-container-horizontal swiper-container-android">
-                        <div class="swiper-wrapper timeline" style={style.s4}>
-                        <SwiperSlide>
-                            <div class="roadmap-info">
-                                <div class="timestamp completed">
-                                    <span class="date">2021 Q3</span>
-                                </div>
-                                <div class="status completed">
-                                    <span>Cardano launches <br/>smart contracts</span>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                        <div className="swiper-wrapper timeline" style={style.s4}>
                         <SwiperSlide className="active">
-                            <div class="roadmap-info">
-                                <div class="timestamp active">
-                                    <span class="date">2021 Q3</span>
+                            <div className="roadmap-info">
+                                <div className="timestamp completed active">
+                                    <span className="date">2021 June</span>
                                 </div>
-                                <div class="status active">
-                                    <span>XADA Liquidity <br/> launch</span>
-                                    <span class="live">Live Now</span>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div class="roadmap-info">
-                                <div class="timestamp remaining">
-                                    <span class="date">2021 Q3</span>
-                                </div>
-                                <div class="status remaining">
-                                    <span>XADA Swapping <br/> launch</span>
+                                <div className="status completed">
+                                    <span>June XADA <br/>Private sale</span>
+                                    <span className="live"><a href="mailto:contact@otc@xada.io">Live Now</a></span>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="roadmap-info">
-                                <div class="timestamp remaining">
-                                    <span class="date">2022 Q1</span>
+                            <div className="roadmap-info">
+                                <div className="timestamp">
+                                    <span className="date">2021 July</span>
                                 </div>
-                                <div class="status remaining">
-                                    <span>Integration with IOHK <br/>ERC20 bridge </span>
+                                <div className="status">
+                                    <span>July XADA <br/>Public sale</span>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="roadmap-info">
+                                <div className="timestamp remaining">
+                                    <span className="date">2021 Q3</span>
+                                </div>
+                                <div className="status remaining">
+                                    <span>Cardano launches <br/> smart contracts</span>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="roadmap-info">
+                                <div className="timestamp remaining">
+                                    <span className="date">2021 Q3</span>
+                                </div>
+                                <div className="status remaining">
+                                    <span>XADA Swap <br/> launch</span>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="roadmap-info">
+                                <div className="timestamp remaining">
+                                    <span className="date">2022 Q1</span>
+                                </div>
+                                <div className="status remaining">
+                                    <span>ERC20 bridge <br/>integration </span>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide >
-                                <div class="roadmap-info">
-                                    <div class="timestamp remaining">
-                                        <span class="date">2022 Q3</span>
+                                <div className="roadmap-info">
+                                    <div className="timestamp remaining">
+                                        <span className="date">2022 Q3</span>
                                     </div>
-                                    <div class="status remaining">
-                                        <span>XADA White-label <br/>solution launch</span>
+                                    <div className="status remaining">
+                                        <span>XADA <br/>Open source</span>
                                     </div>
                                 </div>
                         </SwiperSlide>
                                 </div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </Swiper>
                         </div>
                     </div>

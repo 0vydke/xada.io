@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 body {
     overflow-x: hidden;
@@ -55,9 +62,7 @@ ul {
     background: #FFFFFF;
     z-index: 99;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
 }
 
@@ -75,37 +80,28 @@ ul {
 .loaded #loader-wrapper {
     visibility: hidden;
     -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
     transform: translateY(-100%);
     -webkit-transition: all 0.3s 1s ease-out;
     -o-transition: all 0.3s 1s ease-out;
-    -moz-transition: all 0.3s 1s ease-out;
     transition: all 0.3s 1s ease-out;
 }
 
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    -moz-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    -moz-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -113,7 +109,6 @@ ul {
     opacity: 0;
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 
@@ -136,13 +131,9 @@ svg#loader {
 
 svg#loader g {
     -webkit-animation: spin 15s linear infinite;
-    -moz-animation: spin 15s linear infinite;
-    -o-animation: spin 15s linear infinite;
     animation: spin 15s linear infinite;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -153,8 +144,6 @@ svg#loader g circle {
     color: #EEECF4;
     stroke-dasharray: 260, 0, 1, 0, 1, 0, 1, 0, 10, 1, 10, 1, 10, 1, 10, 1, 10, 10, 1, 10, 1, 10, 1, 10, 10, 1;
     -webkit-animation: dostuff 18s ease infinite;
-    -moz-animation: dostuff 18s ease infinite;
-    -o-animation: dostuff 18s ease infinite;
     animation: dostuff 18s ease infinite;
 }
 
@@ -164,114 +153,82 @@ svg#loader g:nth-child(even) {
 
 svg#loader g:nth-child(1n) {
     -webkit-animation-delay: -1s;
-    -moz-animation-delay: -1s;
-    -o-animation-delay: -1s;
     animation-delay: -1s;
 }
 
 svg#loader g:nth-child(2n) {
     -webkit-animation-delay: -2s;
-    -moz-animation-delay: -2s;
-    -o-animation-delay: -2s;
     animation-delay: -2s;
 }
 
 svg#loader g:nth-child(3n) {
     -webkit-animation-delay: -3s;
-    -moz-animation-delay: -3s;
-    -o-animation-delay: -3s;
     animation-delay: -3s;
 }
 
 svg#loader g:nth-child(4n) {
     -webkit-animation-delay: -4s;
-    -moz-animation-delay: -4s;
-    -o-animation-delay: -4s;
     animation-delay: -4s;
 }
 
 svg#loader g:nth-child(5n) {
     -webkit-animation-delay: -5s;
-    -moz-animation-delay: -5s;
-    -o-animation-delay: -5s;
     animation-delay: -5s;
 }
 
 svg#loader g:nth-child(6n) {
     -webkit-animation-delay: -6s;
-    -moz-animation-delay: -6s;
-    -o-animation-delay: -6s;
     animation-delay: -6s;
 }
 
 svg#loader g:nth-child(7n) {
     -webkit-animation-delay: -7s;
-    -moz-animation-delay: -7s;
-    -o-animation-delay: -7s;
     animation-delay: -7s;
 }
 
 svg#loader g:nth-child(1n) circle {
     -webkit-animation-delay: -1.5s;
-    -moz-animation-delay: -1.5s;
-    -o-animation-delay: -1.5s;
     animation-delay: -1.5s;
 }
 
 svg#loader g:nth-child(2n) circle {
     -webkit-animation-delay: -2.5s;
-    -moz-animation-delay: -2.5s;
-    -o-animation-delay: -2.5s;
     animation-delay: -2.5s;
 }
 
 svg#loader g:nth-child(3n) circle {
     -webkit-animation-delay: -3.5s;
-    -moz-animation-delay: -3.5s;
-    -o-animation-delay: -3.5s;
     animation-delay: -3.5s;
 }
 
 svg#loader g:nth-child(4n) circle,
 svg#loader g:nth-child(5n) circle {
     -webkit-animation-delay: -4.5s;
-    -moz-animation-delay: -4.5s;
-    -o-animation-delay: -4.5s;
     animation-delay: -4.5s;
 }
 
 svg#loader g:nth-child(6n) circle {
     -webkit-animation-delay: -5.5s;
-    -moz-animation-delay: -5.5s;
-    -o-animation-delay: -5.5s;
     animation-delay: -5.5s;
 }
 
 svg#loader g:nth-child(7n) circle {
     -webkit-animation-delay: -6.5s;
-    -moz-animation-delay: -6.5s;
-    -o-animation-delay: -6.5s;
     animation-delay: -6.5s;
 }
 
 svg#loader g:nth-child(8n) circle {
     -webkit-animation-delay: -7.5s;
-    -moz-animation-delay: -7.5s;
-    -o-animation-delay: -7.5s;
     animation-delay: -7.5s;
 }
 
 svg#loader g:nth-child(9n) circle {
     -webkit-animation-delay: -8.5s;
-    -moz-animation-delay: -8.5s;
-    -o-animation-delay: -8.5s;
     animation-delay: -8.5s;
 }
 
 svg#loader g:nth-child(10n) circle {
     -webkit-animation-delay: -9.5s;
-    -moz-animation-delay: -9.5s;
-    -o-animation-delay: -9.5s;
     animation-delay: -9.5s;
 }
 
@@ -281,18 +238,6 @@ svg#loader g:last-child circle {
 }
 
 @-webkit-keyframes dostuff {
-    50% {
-        stroke-dasharray: 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 10, 10, 1, 20, 120, 1, 30, 1, 30, 1, 10, 30, 1;
-    }
-}
-
-@-moz-keyframes dostuff {
-    50% {
-        stroke-dasharray: 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 10, 10, 1, 20, 120, 1, 30, 1, 30, 1, 10, 30, 1;
-    }
-}
-
-@-o-keyframes dostuff {
     50% {
         stroke-dasharray: 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 10, 10, 1, 20, 120, 1, 30, 1, 30, 1, 10, 30, 1;
     }
@@ -311,25 +256,9 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes spin {
-    100% {
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
 @keyframes spin {
     100% {
         -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -375,14 +304,10 @@ svg#loader g:last-child circle {
 .btn-gradient-blue {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    -moz-transition: 0.5s;
     transition: 0.5s;
-    background-image: -webkit-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
-    background-image: -moz-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
     background-image: -o-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
     background-image: linear-gradient(40deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
     background-position: left center;
-    -webkit-background-size: 200% auto;
     background-size: 200% auto;
     border: 0;
     color: #FFFFFF;
@@ -396,8 +321,6 @@ svg#loader g:last-child circle {
 }
 
 .btn-gradient-blue:not(:disabled):not(.disabled):active {
-    background-image: -webkit-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
-    background-image: -moz-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
     background-image: -o-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
     background-image: linear-gradient(40deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
 }
@@ -410,14 +333,10 @@ svg#loader g:last-child circle {
 .btn-gradient-orange {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    -moz-transition: 0.5s;
     transition: 0.5s;
-    background-image: -webkit-linear-gradient(50deg, #FF4137 20%, #FDC800 51%, #FF4137 90%);
-    background-image: -moz-linear-gradient(50deg, #FF4137 20%, #FDC800 51%, #FF4137 90%);
     background-image: -o-linear-gradient(50deg, #FF4137 20%, #FDC800 51%, #FF4137 90%);
     background-image: linear-gradient(40deg, #FF4137 20%, #FDC800 51%, #FF4137 90%);
     background-position: left center;
-    -webkit-background-size: 200% auto;
     background-size: 200% auto;
     border: 0;
     color: #FFFFFF;
@@ -431,8 +350,6 @@ svg#loader g:last-child circle {
 }
 
 .btn-gradient-orange:not(:disabled):not(.disabled):active {
-    background-image: -webkit-linear-gradient(50deg, #FF4137 0%, #FDC800 51%, #FF4137 90%);
-    background-image: -moz-linear-gradient(50deg, #FF4137 0%, #FDC800 51%, #FF4137 90%);
     background-image: -o-linear-gradient(50deg, #FF4137 0%, #FDC800 51%, #FF4137 90%);
     background-image: linear-gradient(40deg, #FF4137 0%, #FDC800 51%, #FF4137 90%);
 }
@@ -445,14 +362,10 @@ svg#loader g:last-child circle {
 .btn-gradient-purple {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    -moz-transition: 0.5s;
     transition: 0.5s;
-    background-image: -webkit-linear-gradient(50deg, #BF68E6 20%, #9E48CD 51%, #BF68E6 90%);
-    background-image: -moz-linear-gradient(50deg, #BF68E6 20%, #9E48CD 51%, #BF68E6 90%);
     background-image: -o-linear-gradient(50deg, #BF68E6 20%, #9E48CD 51%, #BF68E6 90%);
     background-image: linear-gradient(40deg, #BF68E6 20%, #9E48CD 51%, #BF68E6 90%);
     background-position: left center;
-    -webkit-background-size: 200% auto;
     background-size: 200% auto;
     border: 0;
     color: #FFFFFF;
@@ -466,8 +379,6 @@ svg#loader g:last-child circle {
 }
 
 .btn-gradient-purple:not(:disabled):not(.disabled):active {
-    background-image: -webkit-linear-gradient(50deg, #BF68E6 0%, #9E48CD 51%, #BF68E6 90%);
-    background-image: -moz-linear-gradient(50deg, #BF68E6 0%, #9E48CD 51%, #BF68E6 90%);
     background-image: -o-linear-gradient(50deg, #BF68E6 0%, #9E48CD 51%, #BF68E6 90%);
     background-image: linear-gradient(40deg, #BF68E6 0%, #9E48CD 51%, #BF68E6 90%);
 }
@@ -513,26 +424,20 @@ svg#loader g:last-child circle {
     -------------------------------------------------------------------------------------------*/
 
 .progress .progress-blue {
-    background: -webkit-gradient(linear, left top, right top, from(#28BCFD), to(#1D78FF));
-    background: -webkit-linear-gradient(left, #28BCFD, #1D78FF);
-    background: -moz-linear-gradient(left, #28BCFD, #1D78FF);
     background: -o-linear-gradient(left, #28BCFD, #1D78FF);
+    background: -webkit-gradient(linear, left top, right top, from(#28BCFD), to(#1D78FF));
     background: linear-gradient(to right, #28BCFD, #1D78FF);
 }
 
 .progress .progress-orange {
-    background: -webkit-gradient(linear, left top, right top, from(#FDC800), to(#FF4137));
-    background: -webkit-linear-gradient(left, #FDC800, #FF4137);
-    background: -moz-linear-gradient(left, #FDC800, #FF4137);
     background: -o-linear-gradient(left, #FDC800, #FF4137);
+    background: -webkit-gradient(linear, left top, right top, from(#FDC800), to(#FF4137));
     background: linear-gradient(to right, #FDC800, #FF4137);
 }
 
 .progress .progress-purple {
-    background: -webkit-gradient(linear, left top, right top, from(#BF68E6), to(#9E48CD));
-    background: -webkit-linear-gradient(left, #BF68E6, #9E48CD);
-    background: -moz-linear-gradient(left, #BF68E6, #9E48CD);
     background: -o-linear-gradient(left, #BF68E6, #9E48CD);
+    background: -webkit-gradient(linear, left top, right top, from(#BF68E6), to(#9E48CD));
     background: linear-gradient(to right, #BF68E6, #9E48CD);
 }
 
@@ -563,7 +468,6 @@ svg#loader g:last-child circle {
     padding-left: 20px !important;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -759,29 +663,21 @@ svg#loader g:last-child circle {
 
 .maskUp {
     -webkit-animation-name: maskUp;
-    -moz-animation-name: maskUp;
-    -o-animation-name: maskUp;
     animation-name: maskUp;
 }
 
 .maskRight {
     -webkit-animation-name: maskRight;
-    -moz-animation-name: maskRight;
-    -o-animation-name: maskRight;
     animation-name: maskRight;
 }
 
 .maskDown {
     -webkit-animation-name: maskDown;
-    -moz-animation-name: maskDown;
-    -o-animation-name: maskDown;
     animation-name: maskDown;
 }
 
 .maskLeft {
     -webkit-animation-name: maskLeft;
-    -moz-animation-name: maskLeft;
-    -o-animation-name: maskLeft;
     animation-name: maskLeft;
 }
 
@@ -799,39 +695,13 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes maskUp {
-    from {
-        -moz-transform: translate(0, 100%);
-        transform: translate(0, 100%);
-    }
-    to {
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes maskUp {
-    from {
-        -o-transform: translate(0, 100%);
-        transform: translate(0, 100%);
-    }
-    to {
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes maskUp {
     from {
         -webkit-transform: translate(0, 100%);
-        -moz-transform: translate(0, 100%);
-        -o-transform: translate(0, 100%);
         transform: translate(0, 100%);
     }
     to {
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -850,39 +720,13 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes maskRight {
-    from {
-        -moz-transform: translate(-100%, 0);
-        transform: translate(-100%, 0);
-    }
-    to {
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes maskRight {
-    from {
-        -o-transform: translate(-100%, 0);
-        transform: translate(-100%, 0);
-    }
-    to {
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes maskRight {
     from {
         -webkit-transform: translate(-100%, 0);
-        -moz-transform: translate(-100%, 0);
-        -o-transform: translate(-100%, 0);
         transform: translate(-100%, 0);
     }
     to {
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -901,39 +745,13 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes maskDown {
-    from {
-        -moz-transform: translate(0, -100%);
-        transform: translate(0, -100%);
-    }
-    to {
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes maskDown {
-    from {
-        -o-transform: translate(0, -100%);
-        transform: translate(0, -100%);
-    }
-    to {
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes maskDown {
     from {
         -webkit-transform: translate(0, -100%);
-        -moz-transform: translate(0, -100%);
-        -o-transform: translate(0, -100%);
         transform: translate(0, -100%);
     }
     to {
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -952,39 +770,13 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes maskLeft {
-    from {
-        -moz-transform: translate(100%, 0);
-        transform: translate(100%, 0);
-    }
-    to {
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes maskLeft {
-    from {
-        -o-transform: translate(100%, 0);
-        transform: translate(100%, 0);
-    }
-    to {
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes maskLeft {
     from {
         -webkit-transform: translate(100%, 0);
-        -moz-transform: translate(100%, 0);
-        -o-transform: translate(100%, 0);
         transform: translate(100%, 0);
     }
     to {
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -994,43 +786,31 @@ svg#loader g:last-child circle {
 
 .fadeInUpShorter {
     -webkit-animation-name: fadeInUpShorter;
-    -moz-animation-name: fadeInUpShorter;
-    -o-animation-name: fadeInUpShorter;
     animation-name: fadeInUpShorter;
 }
 
 .fadeInUpShortest {
     -webkit-animation-name: fadeInUpShortest;
-    -moz-animation-name: fadeInUpShortest;
-    -o-animation-name: fadeInUpShortest;
     animation-name: fadeInUpShortest;
 }
 
 .fadeInLeftShorter {
     -webkit-animation-name: fadeInLeftShorter;
-    -moz-animation-name: fadeInLeftShorter;
-    -o-animation-name: fadeInLeftShorter;
     animation-name: fadeInLeftShorter;
 }
 
 .fadeInRightShorter {
     -webkit-animation-name: fadeInRightShorter;
-    -moz-animation-name: fadeInRightShorter;
-    -o-animation-name: fadeInRightShorter;
     animation-name: fadeInRightShorter;
 }
 
 .fadeInDownShorter {
     -webkit-animation-name: fadeInDownShorter;
-    -moz-animation-name: fadeInDownShorter;
-    -o-animation-name: fadeInDownShorter;
     animation-name: fadeInDownShorter;
 }
 
 .fadeInDownShorterAbsCenter {
     -webkit-animation-name: fadeInDownShorterAbsCenter;
-    -moz-animation-name: fadeInDownShorterAbsCenter;
-    -o-animation-name: fadeInDownShorterAbsCenter;
     animation-name: fadeInDownShorterAbsCenter;
 }
 
@@ -1050,45 +830,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInUpShorter {
-    from {
-        opacity: 0;
-        -moz-transform: translate(0, 50px);
-        transform: translate(0, 50px);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: none;
-        transform: none;
-    }
-}
-
-@-o-keyframes fadeInUpShorter {
-    from {
-        opacity: 0;
-        -o-transform: translate(0, 50px);
-        transform: translate(0, 50px);
-    }
-    to {
-        opacity: 1;
-        -o-transform: none;
-        transform: none;
-    }
-}
-
 @keyframes fadeInUpShorter {
     from {
         opacity: 0;
         -webkit-transform: translate(0, 50px);
-        -moz-transform: translate(0, 50px);
-        -o-transform: translate(0, 50px);
         transform: translate(0, 50px);
     }
     to {
         opacity: 1;
         -webkit-transform: none;
-        -moz-transform: none;
-        -o-transform: none;
         transform: none;
     }
 }
@@ -1106,45 +856,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInUpShortest {
-    from {
-        opacity: 0;
-        -moz-transform: translate(0, 25px);
-        transform: translate(0, 25px);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: none;
-        transform: none;
-    }
-}
-
-@-o-keyframes fadeInUpShortest {
-    from {
-        opacity: 0;
-        -o-transform: translate(0, 25px);
-        transform: translate(0, 25px);
-    }
-    to {
-        opacity: 1;
-        -o-transform: none;
-        transform: none;
-    }
-}
-
 @keyframes fadeInUpShortest {
     from {
         opacity: 0;
         -webkit-transform: translate(0, 25px);
-        -moz-transform: translate(0, 25px);
-        -o-transform: translate(0, 25px);
         transform: translate(0, 25px);
     }
     to {
         opacity: 1;
         -webkit-transform: none;
-        -moz-transform: none;
-        -o-transform: none;
         transform: none;
     }
 }
@@ -1165,45 +885,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInLeftShorter {
-    from {
-        opacity: 0;
-        -moz-transform: translate(50px, 0);
-        transform: translate(50px, 0);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes fadeInLeftShorter {
-    from {
-        opacity: 0;
-        -o-transform: translate(50px, 0);
-        transform: translate(50px, 0);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes fadeInLeftShorter {
     from {
         opacity: 0;
         -webkit-transform: translate(50px, 0);
-        -moz-transform: translate(50px, 0);
-        -o-transform: translate(50px, 0);
         transform: translate(50px, 0);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -1224,45 +914,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInRightShorter {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50px, 0);
-        transform: translate(-50px, 0);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes fadeInRightShorter {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50px, 0);
-        transform: translate(-50px, 0);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes fadeInRightShorter {
     from {
         opacity: 0;
         -webkit-transform: translate(-50px, 0);
-        -moz-transform: translate(-50px, 0);
-        -o-transform: translate(-50px, 0);
         transform: translate(-50px, 0);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -1283,45 +943,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInDownShorter {
-    from {
-        opacity: 0;
-        -moz-transform: translate(0, -50px);
-        transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-@-o-keyframes fadeInDownShorter {
-    from {
-        opacity: 0;
-        -o-transform: translate(0, -50px);
-        transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes fadeInDownShorter {
     from {
         opacity: 0;
         -webkit-transform: translate(0, -50px);
-        -moz-transform: translate(0, -50px);
-        -o-transform: translate(0, -50px);
         transform: translate(0, -50px);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
@@ -1342,60 +972,26 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInDownShorterAbsCenter {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50%, -50px);
-        transform: translate(-50%, -50px);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
-@-o-keyframes fadeInDownShorterAbsCenter {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50%, -50px);
-        transform: translate(-50%, -50px);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
 @keyframes fadeInDownShorterAbsCenter {
     from {
         opacity: 0;
         -webkit-transform: translate(-50%, -50px);
-        -moz-transform: translate(-50%, -50px);
-        -o-transform: translate(-50%, -50px);
         transform: translate(-50%, -50px);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
     }
 }
 
 .expandIn {
     -webkit-animation-name: expandIn;
-    -moz-animation-name: expandIn;
-    -o-animation-name: expandIn;
     animation-name: expandIn;
 }
 
 .blurIn {
     -webkit-animation-name: blurIn;
-    -moz-animation-name: blurIn;
-    -o-animation-name: blurIn;
     animation-name: blurIn;
 }
 
@@ -1415,45 +1011,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes expandIn {
-    from {
-        opacity: 0;
-        -moz-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-o-keyframes expandIn {
-    from {
-        opacity: 0;
-        -o-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 @keyframes expandIn {
     from {
         opacity: 0;
         -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -o-transform: scale(0.8);
         transform: scale(0.8);
     }
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1);
     }
 }
@@ -1478,44 +1044,12 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes blurIn {
-    from {
-        opacity: 0;
-        filter: blur(20px);
-        -moz-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    to {
-        opacity: 1;
-        filter: blur(0);
-        -moz-transform: none;
-        transform: none;
-    }
-}
-
-@-o-keyframes blurIn {
-    from {
-        opacity: 0;
-        filter: blur(20px);
-        -o-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    to {
-        opacity: 1;
-        filter: blur(0);
-        -o-transform: none;
-        transform: none;
-    }
-}
-
 @keyframes blurIn {
     from {
         opacity: 0;
         -webkit-filter: blur(20px);
         filter: blur(20px);
         -webkit-transform: scale(1.3);
-        -moz-transform: scale(1.3);
-        -o-transform: scale(1.3);
         transform: scale(1.3);
     }
     to {
@@ -1523,30 +1057,22 @@ svg#loader g:last-child circle {
         -webkit-filter: blur(0);
         filter: blur(0);
         -webkit-transform: none;
-        -moz-transform: none;
-        -o-transform: none;
         transform: none;
     }
 }
 
 .stepsFadeInUp {
     -webkit-animation-name: stepsFadeInUp;
-    -moz-animation-name: stepsFadeInUp;
-    -o-animation-name: stepsFadeInUp;
     animation-name: stepsFadeInUp;
 }
 
 .stepsFadeInLeft {
     -webkit-animation-name: stepsFadeInLeft;
-    -moz-animation-name: stepsFadeInLeft;
-    -o-animation-name: stepsFadeInLeft;
     animation-name: stepsFadeInLeft;
 }
 
 .stepsFadeInRight {
     -webkit-animation-name: stepsFadeInRight;
-    -moz-animation-name: stepsFadeInRight;
-    -o-animation-name: stepsFadeInRight;
     animation-name: stepsFadeInRight;
 }
 
@@ -1566,45 +1092,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes stepsFadeInUp {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50%, 25%);
-        transform: translate(-50%, 25%);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
-@-o-keyframes stepsFadeInUp {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50%, 25%);
-        transform: translate(-50%, 25%);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
 @keyframes stepsFadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate(-50%, 25%);
-        -moz-transform: translate(-50%, 25%);
-        -o-transform: translate(-50%, 25%);
         transform: translate(-50%, 25%);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
@@ -1625,45 +1121,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes stepsFadeInLeft {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-75%, -50%);
-        transform: translate(-75%, -50%);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
-@-o-keyframes stepsFadeInLeft {
-    from {
-        opacity: 0;
-        -o-transform: translate(-75%, -50%);
-        transform: translate(-75%, -50%);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
 @keyframes stepsFadeInLeft {
     from {
         opacity: 0;
         -webkit-transform: translate(-75%, -50%);
-        -moz-transform: translate(-75%, -50%);
-        -o-transform: translate(-75%, -50%);
         transform: translate(-75%, -50%);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
@@ -1684,67 +1150,31 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes stepsFadeInRight {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-25%, -50%);
-        transform: translate(-25%, -50%);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
-@-o-keyframes stepsFadeInRight {
-    from {
-        opacity: 0;
-        -o-transform: translate(-25%, -50%);
-        transform: translate(-25%, -50%);
-    }
-    to {
-        opacity: 1;
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
 @keyframes stepsFadeInRight {
     from {
         opacity: 0;
         -webkit-transform: translate(-25%, -50%);
-        -moz-transform: translate(-25%, -50%);
-        -o-transform: translate(-25%, -50%);
         transform: translate(-25%, -50%);
     }
     to {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
 
 .textBgFadeInUp {
     -webkit-animation-name: textBgFadeInUp;
-    -moz-animation-name: textBgFadeInUp;
-    -o-animation-name: textBgFadeInUp;
     animation-name: textBgFadeInUp;
 }
 
 .textBgFadeInUpDark {
     -webkit-animation-name: textBgFadeInUpDark;
-    -moz-animation-name: textBgFadeInUpDark;
-    -o-animation-name: textBgFadeInUpDark;
     animation-name: textBgFadeInUpDark;
 }
 
 .textBgFadeInUp2 {
     -webkit-animation-name: textBgFadeInUp2;
-    -moz-animation-name: textBgFadeInUp2;
-    -o-animation-name: textBgFadeInUp2;
     animation-name: textBgFadeInUp2;
 }
 
@@ -1764,45 +1194,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes textBgFadeInUp {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.06;
-        -moz-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
-@-o-keyframes textBgFadeInUp {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.06;
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
 @keyframes textBgFadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate(-50%, 200%);
-        -moz-transform: translate(-50%, 200%);
-        -o-transform: translate(-50%, 200%);
         transform: translate(-50%, 200%);
     }
     to {
         opacity: 0.06;
         -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
     }
 }
@@ -1823,45 +1223,15 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes textBgFadeInUpDark {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.02;
-        -moz-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
-@-o-keyframes textBgFadeInUpDark {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.02;
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
 @keyframes textBgFadeInUpDark {
     from {
         opacity: 0;
         -webkit-transform: translate(-50%, 200%);
-        -moz-transform: translate(-50%, 200%);
-        -o-transform: translate(-50%, 200%);
         transform: translate(-50%, 200%);
     }
     to {
         opacity: 0.02;
         -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
     }
 }
@@ -1882,53 +1252,21 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes textBgFadeInUp2 {
-    from {
-        opacity: 0;
-        -moz-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.5;
-        -moz-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
-@-o-keyframes textBgFadeInUp2 {
-    from {
-        opacity: 0;
-        -o-transform: translate(-50%, 200%);
-        transform: translate(-50%, 200%);
-    }
-    to {
-        opacity: 0.5;
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
 @keyframes textBgFadeInUp2 {
     from {
         opacity: 0;
         -webkit-transform: translate(-50%, 200%);
-        -moz-transform: translate(-50%, 200%);
-        -o-transform: translate(-50%, 200%);
         transform: translate(-50%, 200%);
     }
     to {
         opacity: 0.5;
         -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
     }
 }
 
 .fadeInScale {
     -webkit-animation-name: fadeInScale;
-    -moz-animation-name: fadeInScale;
-    -o-animation-name: fadeInScale;
     animation-name: fadeInScale;
 }
 
@@ -1948,53 +1286,21 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes fadeInScale {
-    from {
-        opacity: 0;
-        -moz-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    to {
-        opacity: 1;
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-o-keyframes fadeInScale {
-    from {
-        opacity: 0;
-        -o-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    to {
-        opacity: 1;
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 @keyframes fadeInScale {
     from {
         opacity: 0;
         -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -o-transform: scale(0.7);
         transform: scale(0.7);
     }
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1);
     }
 }
 
 .scaleOut {
     -webkit-animation-name: scaleOut;
-    -moz-animation-name: scaleOut;
-    -o-animation-name: scaleOut;
     animation-name: scaleOut;
 }
 
@@ -2009,39 +1315,13 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes scaleOut {
-    from {
-        -moz-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    to {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-o-keyframes scaleOut {
-    from {
-        -o-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    to {
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 @keyframes scaleOut {
     from {
         -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
         transform: scale(1.1);
     }
     to {
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1);
     }
 }
@@ -2079,61 +1359,19 @@ svg#loader g:last-child circle {
     }
 }
 
-@-moz-keyframes k1 {
-    0% {
-        -moz-transform: scale(0.01);
-        transform: scale(0.01);
-        opacity: 0;
-    }
-    33% {
-        -moz-transform: scale(0.4);
-        transform: scale(0.4);
-        opacity: 0.8;
-    }
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-
-@-o-keyframes k1 {
-    0% {
-        -o-transform: scale(0.01);
-        transform: scale(0.01);
-        opacity: 0;
-    }
-    33% {
-        -o-transform: scale(0.4);
-        transform: scale(0.4);
-        opacity: 0.8;
-    }
-    100% {
-        -o-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-
 @keyframes k1 {
     0% {
         -webkit-transform: scale(0.01);
-        -moz-transform: scale(0.01);
-        -o-transform: scale(0.01);
         transform: scale(0.01);
         opacity: 0;
     }
     33% {
         -webkit-transform: scale(0.4);
-        -moz-transform: scale(0.4);
-        -o-transform: scale(0.4);
         transform: scale(0.4);
         opacity: 0.8;
     }
     100% {
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1);
         opacity: 0;
     }
@@ -2191,37 +1429,23 @@ svg#loader g:last-child circle {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
-    background: -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     background: -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     border: 0.5px solid white;
     border-radius: 50%;
     opacity: 0;
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
-    -o-transform: scale(1);
     transform: scale(1);
     -webkit-animation-name: k1;
-    -moz-animation-name: k1;
-    -o-animation-name: k1;
     animation-name: k1;
     -webkit-animation-duration: 6s;
-    -moz-animation-duration: 6s;
-    -o-animation-duration: 6s;
     animation-duration: 6s;
     -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -o-animation-delay: 0s;
     animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -2232,32 +1456,20 @@ svg#loader g:last-child circle {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
-    background: -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     background: -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
     border: 0.5px solid white;
     border-radius: 50%;
     opacity: 0;
     -webkit-animation-name: k1;
-    -moz-animation-name: k1;
-    -o-animation-name: k1;
     animation-name: k1;
     -webkit-animation-duration: 6s;
-    -moz-animation-duration: 6s;
-    -o-animation-duration: 6s;
     animation-duration: 6s;
     -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
     animation-delay: 3s;
     -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -2266,8 +1478,6 @@ svg#loader g:last-child circle {
 * 	----------------------------------------------------------------------------------------------*/
 
 .token-details {
-    background: -webkit-linear-gradient(58deg, #FF4137, #FDC800);
-    background: -moz-linear-gradient(58deg, #FF4137, #FDC800);
     background: -o-linear-gradient(58deg, #FF4137, #FDC800);
     background: linear-gradient(32deg, #FF4137, #FDC800);
     padding: 1.2rem;
@@ -2305,10 +1515,8 @@ svg#loader g:last-child circle {
     background: #FFFFFF;
     border-radius: 1rem;
     height: 1rem;
-    background: -webkit-gradient(linear, left top, right top, from(#29BEFF), to(#1C76FE));
-    background: -webkit-linear-gradient(left, #29BEFF, #1C76FE);
-    background: -moz-linear-gradient(left, #29BEFF, #1C76FE);
     background: -o-linear-gradient(left, #29BEFF, #1C76FE);
+    background: -webkit-gradient(linear, left top, right top, from(#29BEFF), to(#1C76FE));
     background: linear-gradient(to right, #29BEFF, #1C76FE);
     -webkit-box-shadow: 2px 0 7px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 2px 0 7px 0 rgba(0, 0, 0, 0.35);
@@ -2318,19 +1526,13 @@ svg#loader g:last-child circle {
     position: absolute;
     top: -1.8rem;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -moz-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     /* Default */
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
@@ -2341,8 +1543,6 @@ svg#loader g:last-child circle {
 .token-details .progress-top li {
     display: block;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* Default */
@@ -2363,19 +1563,13 @@ svg#loader g:last-child circle {
     position: absolute;
     top: -1.1rem;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -moz-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     /* Default */
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
@@ -2386,8 +1580,6 @@ svg#loader g:last-child circle {
 .token-details .progress-bars li {
     display: block;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* Default */
@@ -2397,20 +1589,14 @@ svg#loader g:last-child circle {
     position: absolute;
     bottom: 1.5rem;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     color: #FFFFFF;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -moz-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     /* Default */
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
@@ -2420,8 +1606,6 @@ svg#loader g:last-child circle {
 .token-details .progress-bottom .progress-info {
     display: block;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     font-size: 0.75rem;
@@ -2502,8 +1686,6 @@ svg#loader g:last-child circle {
 .clock-counter .flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
     background: transparent !important;
     -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
     animation: none !important;
 }
 
@@ -2511,8 +1693,6 @@ svg#loader g:last-child circle {
 .clock-counter .flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
     background: transparent !important;
     -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
     animation: none !important;
 }
 
@@ -2611,12 +1791,16 @@ svg#loader g:last-child circle {
 
 .navbar {
     padding: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .scrolled {
     background: #0b2046;
     padding: 12px 0px !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -2637,14 +1821,22 @@ svg#loader g:last-child circle {
 .navbar.navbar-dark,
 .navbar-collapse.collapse.show {
     min-height: 65px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 @media (max-width: 991.98px) {
     .navbar.navbar-dark,
     .navbar-collapse.collapse.show {
+        width: inherit;
         background: #102E65;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
         transition: 0.2s;
+    }
+    #root,body{
+        overflow-x: hidden;
     }
 }
 
@@ -2662,11 +1854,12 @@ svg#loader g:last-child circle {
     padding: 1.2rem 0;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .navbar ul.navbar-nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -2710,7 +1903,6 @@ svg#loader g:last-child circle {
     font-size: 0.55rem;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -2718,7 +1910,6 @@ svg#loader g:last-child circle {
     border: none;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -2728,7 +1919,6 @@ svg#loader g:last-child circle {
     padding-left: 20px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-color: transparent;
 }
@@ -2778,15 +1968,12 @@ svg#loader g:last-child circle {
     height: 4px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 header .navbar.navbar-fixed {
-    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
-    background: -webkit-linear-gradient(left, #140E38, #194089);
-    background: -moz-linear-gradient(left, #140E38, #194089);
     background: -o-linear-gradient(left, #140E38, #194089);
+    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
     background: linear-gradient(to right, #140E38, #194089);
     padding: 0.75rem 0;
 }
@@ -2884,9 +2071,7 @@ header .navbar.navbar-shadow {
     top: 78%;
     left: 53%;
     -webkit-transform: translate(-70%, -50%);
-    -moz-transform: translate(-70%, -50%);
     -ms-transform: translate(-70%, -50%);
-    -o-transform: translate(-70%, -50%);
     transform: translate(-70%, -50%);
 }
 
@@ -2916,13 +2101,9 @@ header .navbar.navbar-shadow {
 
 .exchange-listing .listing {
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -moz-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
 }
@@ -3016,9 +2197,7 @@ header .navbar.navbar-shadow {
     display: block;
     left: 50%;
     -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
     transform: translate(-50%);
     top: -2px;
     text-transform: uppercase;
@@ -3068,9 +2247,7 @@ header .navbar.navbar-shadow {
     display: block;
     left: 50%;
     -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
     transform: translate(-50%);
     top: -2px;
 }
@@ -3210,10 +2387,13 @@ header .navbar.navbar-shadow {
     .roadmap .swiper-slide {
         width: 20% !important;
     }
+    .swiper-button-next, .swiper-button-prev{
+        margin-top: calc(-4px - (var(--swiper-navigation-size)/ 2)) !important;
+    }
 }
 @media (max-width: 1200px){
     .roadmap .swiper-slide {
-        width: 35% !important;
+        width: 45% !important;
     }
     .roadmap .timestamp span:before{
         left: 48% !important;
@@ -3225,6 +2405,9 @@ header .navbar.navbar-shadow {
     }
 }
 @media (max-width: 771px){
+    .swiper-container-android .swiper-slide, .swiper-wrapper{
+        padding: 0px 20px 0px 10px;
+    }
     .roadmap .swiper-slide {
         width: 100% !important;
     }
@@ -3268,7 +2451,17 @@ header .navbar.navbar-shadow {
     border-top: 2px solid #6DEBA3;
     margin-top: 10px;
 }
-
+.roadmap .swiper-slide.active .live a{
+    color: #6DEBA3;
+    display: block;
+    text-decoration: none;
+}
+.roadmap .swiper-slide.active .live:hover{
+    background: #6DEBA3;
+}
+.roadmap .swiper-slide.active .live:hover a{
+    color: white;
+}
 .roadmap .swiper.control {
     position: absolute;
 }
@@ -3279,8 +2472,6 @@ header .navbar.navbar-shadow {
     top: 0;
     display: inline-block;
     cursor: pointer;
-    background: -webkit-linear-gradient(45deg, #BF68E6, #9E48CD);
-    background: -moz-linear-gradient(45deg, #BF68E6, #9E48CD);
     background: -o-linear-gradient(45deg, #BF68E6, #9E48CD);
     background: linear-gradient(45deg, #BF68E6, #9E48CD);
     color: #FFFFFF;
@@ -3324,8 +2515,6 @@ header .navbar.navbar-shadow {
     margin: 1rem 0 2rem 0;
     list-style-type: none;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0;
@@ -3336,20 +2525,13 @@ header .navbar.navbar-shadow {
     margin-bottom: 10px;
     color: #FFFFFF;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     font-weight: 100;
@@ -3374,7 +2556,6 @@ header .navbar.navbar-shadow {
     left: 42%;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
 }
 
@@ -3402,7 +2583,6 @@ header .navbar.navbar-shadow {
     position: relative;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
     line-height: 0;
 }
@@ -3443,15 +2623,11 @@ header .navbar.navbar-shadow {
 .team .team-img:hover:before {
     border-image-source: linear-gradient(to top, #2004d9, #2004d9);
     -webkit-transform: rotate(55deg);
-    -moz-transform: rotate(55deg);
     -ms-transform: rotate(55deg);
-    -o-transform: rotate(55deg);
     transform: rotate(55deg);
 }
 
 .team .team-img:hover~.team-icon {
-    background: -webkit-linear-gradient(45deg, #2004d9, #2004d9);
-    background: -moz-linear-gradient(45deg, #2004d9, #2004d9);
     background: -o-linear-gradient(45deg, #2004d9, #2004d9);
     background: linear-gradient(45deg, #2004d9, #2004d9);
 }
@@ -3468,20 +2644,17 @@ header .navbar.navbar-shadow {
     left: 50%;
     z-index: -1;
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
     border-right: 3px solid #6DEBA3;
     border-image-slice: 0.5;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     -o-transition-property: -o-transform;
-    -moz-transition-property: transform, -moz-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+    transition-property: transform, -webkit-transform;
     -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
@@ -3492,8 +2665,6 @@ header .navbar.navbar-shadow {
     bottom: 25%;
     z-index: 1;
     border-radius: 50%;
-    background: -webkit-linear-gradient(45deg, #29BEFF, #1C76FE);
-    background: -moz-linear-gradient(45deg, #29BEFF, #1C76FE);
     background: -o-linear-gradient(45deg, #29BEFF, #1C76FE);
     background: linear-gradient(45deg, #29BEFF, #1C76FE);
     padding: 0.2rem 0.1rem 0.017rem 0.17rem;
@@ -3533,8 +2704,6 @@ header .navbar.navbar-shadow {
 /* Team modal popup scss */
 
 .team-modal {
-    background: -webkit-linear-gradient(45deg, rgba(41, 190, 255, 0.85), rgba(28, 118, 254, 0.85));
-    background: -moz-linear-gradient(45deg, rgba(41, 190, 255, 0.85), rgba(28, 118, 254, 0.85));
     background: -o-linear-gradient(45deg, rgba(41, 190, 255, 0.85), rgba(28, 118, 254, 0.85));
     background: linear-gradient(45deg, rgba(41, 190, 255, 0.85), rgba(28, 118, 254, 0.85));
 }
@@ -3565,8 +2734,6 @@ header .navbar.navbar-shadow {
     background: transparent;
     text-align: center;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
@@ -3582,8 +2749,13 @@ header .navbar.navbar-shadow {
 
 .faq .tab-content .card {
     border: unset !important;
+    border-radius: 0;
     border-bottom: 1px solid #474a66 !important;
 }
+.faq .tab-content .card:last-child {
+    border-bottom: unset !important;
+}
+
 
 .faq .tab-content .card .card-header {
     background-color: #090d30;
@@ -3629,13 +2801,10 @@ header .navbar.navbar-shadow {
     font-family: 'themify';
     -webkit-transition: all 300ms linear 0s;
     -o-transition: all 300ms linear 0s;
-    -moz-transition: all 300ms linear 0s;
     transition: all 300ms linear 0s;
     font-size: clac(0.65rem);
-    background-image: -webkit-gradient(linear, left top, right top, from(#BF68E6), to(#9E48CD));
-    background-image: -webkit-linear-gradient(left, #BF68E6, #9E48CD);
-    background-image: -moz-linear-gradient(left, #BF68E6, #9E48CD);
     background-image: -o-linear-gradient(left, #BF68E6, #9E48CD);
+    background-image: -webkit-gradient(linear, left top, right top, from(#BF68E6), to(#9E48CD));
     background-image: linear-gradient(90deg, #BF68E6, #9E48CD);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3664,10 +2833,7 @@ header .navbar.navbar-shadow {
     font-size: 0.65rem;
     -webkit-transition: all 300ms linear 0s;
     -o-transition: all 300ms linear 0s;
-    -moz-transition: all 300ms linear 0s;
     transition: all 300ms linear 0s;
-    background-image: -webkit-linear-gradient(45deg, #BF68E6, #9E48CD);
-    background-image: -moz-linear-gradient(45deg, #BF68E6, #9E48CD);
     background-image: -o-linear-gradient(45deg, #BF68E6, #9E48CD);
     background-image: linear-gradient(45deg, #BF68E6, #9E48CD);
     background-repeat: repeat-x;
@@ -3710,18 +2876,14 @@ header .navbar.navbar-shadow {
 .faq .collapse-icon.accordion-icon-rotate a[aria-expanded='true']:before,
 .faq .collapse-icon.accordion-icon-rotate a[aria-expanded='true'] .icon:before {
     -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
 
 .faq .collapse-icon.accordion-icon-rotate a[aria-expanded='false']:after,
 .faq .collapse-icon.accordion-icon-rotate a[aria-expanded='false'] .icon:after {
     -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -3734,21 +2896,15 @@ header .navbar.navbar-shadow {
 
 .contact .contact-info {
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .contact .contact-info li {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
 }
@@ -3772,7 +2928,6 @@ header .navbar.navbar-shadow {
     padding-bottom: 2.5rem;
     position: relative;
     background: url('../../images/footer-image.png') no-repeat center center;
-    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -3853,10 +3008,8 @@ header .navbar.navbar-shadow {
 }
 
 .blog-area .blog-head {
-    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
-    background: -webkit-linear-gradient(left, #140E38, #194089);
-    background: -moz-linear-gradient(left, #140E38, #194089);
     background: -o-linear-gradient(left, #140E38, #194089);
+    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
     background: linear-gradient(to right, #140E38, #194089);
 }
 
@@ -4087,8 +3240,6 @@ blockquote {
 
 .pagination {
     display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -moz-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 4.5rem;
@@ -4106,8 +3257,6 @@ blockquote {
 }
 
 .pagination .page-link:hover {
-    background: -webkit-linear-gradient(50deg, #28BCFD, #1D78FF);
-    background: -moz-linear-gradient(50deg, #28BCFD, #1D78FF);
     background: -o-linear-gradient(50deg, #28BCFD, #1D78FF);
     background: linear-gradient(40deg, #28BCFD, #1D78FF);
     color: #FFFFFF;
@@ -4116,8 +3265,6 @@ blockquote {
 .pagination .page-link.active {
     border: none;
     color: #FFFFFF;
-    background: -webkit-linear-gradient(50deg, #28BCFD, #1D78FF);
-    background: -moz-linear-gradient(50deg, #28BCFD, #1D78FF);
     background: -o-linear-gradient(50deg, #28BCFD, #1D78FF);
     background: linear-gradient(40deg, #28BCFD, #1D78FF);
 }
@@ -4217,10 +3364,8 @@ blockquote {
 }
 
 .sidebar .social-card .card-body ul.social-buttons li a:hover {
-    background-image: -webkit-gradient(linear, left top, right top, from(#1D78FF), to(#28BCFD));
-    background-image: -webkit-linear-gradient(left, #1D78FF 0%, #28BCFD 100%);
-    background-image: -moz-linear-gradient(left, #1D78FF 0%, #28BCFD 100%);
     background-image: -o-linear-gradient(left, #1D78FF 0%, #28BCFD 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#1D78FF), to(#28BCFD));
     background-image: linear-gradient(to right, #1D78FF 0%, #28BCFD 100%);
     color: #FFFFFF;
     -webkit-box-shadow: 0 0 10px 3px rgba(40, 188, 253, 0.26);
@@ -4296,10 +3441,8 @@ blockquote {
 }
 
 .sidebar .contact-us {
-    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
-    background: -webkit-linear-gradient(left, #140E38, #194089);
-    background: -moz-linear-gradient(left, #140E38, #194089);
     background: -o-linear-gradient(left, #140E38, #194089);
+    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
     background: linear-gradient(to right, #140E38, #194089);
     padding: 1.5rem 0 1.2rem;
     border-radius: 7px;
@@ -4343,10 +3486,8 @@ body.inner-page {
 }
 
 .sub-page .page-header {
-    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
-    background: -webkit-linear-gradient(left, #140E38, #194089);
-    background: -moz-linear-gradient(left, #140E38, #194089);
     background: -o-linear-gradient(left, #140E38, #194089);
+    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
     background: linear-gradient(to right, #140E38, #194089);
     height: 500px;
     width: 100%;
@@ -4465,10 +3606,8 @@ body.inner-page {
 }
 
 .error404 {
-    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
-    background: -webkit-linear-gradient(left, #140E38, #194089);
-    background: -moz-linear-gradient(left, #140E38, #194089);
     background: -o-linear-gradient(left, #140E38, #194089);
+    background: -webkit-gradient(linear, left top, right top, from(#140E38), to(#194089));
     background: linear-gradient(to right, #140E38, #194089);
     position: relative;
 }
@@ -4521,22 +3660,16 @@ body.inner-page {
 
 #svg-animation .cic-logo-animation {
     -webkit-animation: fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
-    -moz-animation: fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
-    -o-animation: fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
     animation: fade-in-bottom 0.7s ease-out 3s both, updown_logo 4s ease infinite;
 }
 
 #svg-animation .svg-elements-1-animation {
     -webkit-animation: updown1 4s ease 2;
-    -moz-animation: updown1 4s ease 2;
-    -o-animation: updown1 4s ease 2;
     animation: updown1 4s ease 2;
 }
 
 #svg-animation .svg-elements-2-animation {
     -webkit-animation: updown2 5s ease 2;
-    -moz-animation: updown2 5s ease 2;
-    -o-animation: updown2 5s ease 2;
     animation: updown2 5s ease 2;
 }
 
@@ -4582,53 +3715,17 @@ body.inner-page {
     }
 }
 
-@-moz-keyframes updown_logo {
-    0% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -moz-transform: translateY(16px);
-        transform: translateY(16px);
-    }
-    100% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
-@-o-keyframes updown_logo {
-    0% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -o-transform: translateY(16px);
-        transform: translateY(16px);
-    }
-    100% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
 @keyframes updown_logo {
     0% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(16px);
-        -moz-transform: translateY(16px);
-        -o-transform: translateY(16px);
         transform: translateY(16px);
     }
     100% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
 }
@@ -4648,53 +3745,17 @@ body.inner-page {
     }
 }
 
-@-moz-keyframes updown1 {
-    0% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -moz-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-    100% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
-@-o-keyframes updown1 {
-    0% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -o-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-    100% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
 @keyframes updown1 {
     0% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(8px);
-        -moz-transform: translateY(8px);
-        -o-transform: translateY(8px);
         transform: translateY(8px);
     }
     100% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
 }
@@ -4714,53 +3775,17 @@ body.inner-page {
     }
 }
 
-@-moz-keyframes updown2 {
-    0% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -moz-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-    100% {
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
-@-o-keyframes updown2 {
-    0% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-    50% {
-        -o-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-    100% {
-        -o-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-
 @keyframes updown2 {
     0% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(8px);
-        -moz-transform: translateY(8px);
-        -o-transform: translateY(8px);
         transform: translateY(8px);
     }
     100% {
         -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -o-transform: translateY(0px);
         transform: translateY(0px);
     }
 }
@@ -4770,24 +3795,10 @@ body.inner-page {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     -webkit-animation: dash 3s linear forwards;
-    -moz-animation: dash 3s linear forwards;
-    -o-animation: dash 3s linear forwards;
     animation: dash 3s linear forwards;
 }
 
 @-webkit-keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-moz-keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-o-keyframes dash {
     to {
         stroke-dashoffset: 0;
     }
@@ -4804,30 +3815,10 @@ body.inner-page {
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     -webkit-animation: dash-reverse 2s linear forwards;
-    -moz-animation: dash-reverse 2s linear forwards;
-    -o-animation: dash-reverse 2s linear forwards;
     animation: dash-reverse 2s linear forwards;
 }
 
 @-webkit-keyframes dash-reverse {
-    from {
-        stroke-dashoffset: -500;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-moz-keyframes dash-reverse {
-    from {
-        stroke-dashoffset: -500;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-o-keyframes dash-reverse {
     from {
         stroke-dashoffset: -500;
     }
@@ -4868,16 +3859,12 @@ header .navbar.navbar-fixed {
 }
 
 .ripples:before {
-    background: -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
-    background: -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     background: -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     border: 0.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .ripples:after {
-    background: -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
-    background: -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     background: -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.1) 100%);
     border: 0.5px solid rgba(255, 255, 255, 0.4);
@@ -4966,6 +3953,11 @@ p {
     top: 15%;
 }
 
+@media (max-width: 668px){
+    #token-sale-mobile-app .token-sale:before,#roadmap:before,#problem-solution:before,#about:before,.head-content:before {
+        width: 320px;
+    }
+}
 #token-sale-mobile-app ul.token-sale-info li {
     color: #C7B8FF;
 }
@@ -5056,7 +4048,7 @@ p {
         font-size: 0.8rem;
     }
     .section-padding {
-        padding: 3rem 0 !important;
+        padding: 25px 0 15px !important;
     }
     .dark-bg-heading {
         margin-bottom: 3rem !important;
@@ -5071,8 +4063,6 @@ p {
     }
     .move-first {
         -webkit-box-ordinal-group: 0;
-        -webkit-order: -1;
-        -moz-box-ordinal-group: 0;
         -ms-flex-order: -1;
         order: -1;
     }
@@ -5251,8 +4241,6 @@ p {
     }
     .move-first {
         -webkit-box-ordinal-group: 0;
-        -webkit-order: -1;
-        -moz-box-ordinal-group: 0;
         -ms-flex-order: -1;
         order: -1;
     }
@@ -5323,8 +4311,6 @@ p {
     }
     .move-first {
         -webkit-box-ordinal-group: 0;
-        -webkit-order: -1;
-        -moz-box-ordinal-group: 0;
         -ms-flex-order: -1;
         order: -1;
     }

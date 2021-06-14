@@ -15,7 +15,7 @@
       {
         "id": 2,
         "name": "Arnas Pečelis",
-        "role": "Developer",
+        "role": "CTO",
         "img": "2",
         "link": "https://www.linkedin.com/in/arnaspecelis/",
         "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
@@ -26,9 +26,10 @@
       },
       {
         "id": 3,
-        "name": "Mary J. Wardle",
-        "role": "CPO",
-        "img": "6",
+        "name": "Louise Phillips",
+        "role": "CMO",
+        "img": "3",
+        "link": "https://www.linkedin.com/in/louise-phillips-435432213/",
         "description1": "Experienced algorithmic crypto trader and a machine learning evangelist.",
         "description2": "I’m focusing on the logic behind the combination of analysis tools, neural networks and genetic algorithms for optimization. Always wanted to have a trading bot with more features but never had the time to build a solution beyond basic python technical analysis tracker.",
         "skill1": "85%",

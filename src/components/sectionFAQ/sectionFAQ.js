@@ -13,6 +13,22 @@ const style = {
     s4: {display: "flex", justifyContent: 'center'}
 }
 export default class SectionFAQ extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {activeClasses: [false, false, false]};
+      }
+      addActiveClass1=() => {
+        const activeClasses = [!this.state.activeClasses[0], false, false].flat();
+        this.setState({activeClasses});
+      }
+      addActiveClass2=() => {
+        const activeClasses = [false, !this.state.activeClasses[1], false].flat();
+        this.setState({activeClasses});
+      }
+      addActiveClass3=() => {
+        const activeClasses = [false, false, !this.state.activeClasses[2]].flat();
+        this.setState({activeClasses});
+      }
     render(){
     return (
         <section id="faq" className="faq section-padding">
@@ -20,9 +36,9 @@ export default class SectionFAQ extends React.Component {
                 <div className="heading text-center">
                     <div className="animate__animated animate__fadeInUp" style={style.s1}>
                         <div style={style.s4}>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         <h2 className="title">FAQ</h2>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         </div>
                     </div>
                     <p className="content-desc animate__animated animate__fadeInUp" style={style.s2}>
@@ -30,16 +46,16 @@ export default class SectionFAQ extends React.Component {
 undertaken by the founding team until launch. For some of the larger projects.
                     </p>
                 </div>
-                <div class="row">
+                <div className="row">
                     <div className="col">
                     <Tabs className="nav nav-pills nav-underline mb-5 animate__animated animate__fadeInUp" defaultActiveKey="general" id="uncontrolled-tab-example" style={style.s3}>
-                        <Tab class="tab-pane fade show active" eventKey="general" title="General">
+                        <Tab className="tab-pane fade show active" eventKey="general" title="General">
                             <Accordion className="collapse-icon accordion-icon-rotate animate__animated animate__fadeInUp" style={style.s3}>
                                 <Card className="card animate__animated animate__fadeInUp">
                                     <Card.Header className="card-header">
-                                    <Accordion.Toggle className="btn-link" as={Card.Header} variant="link" eventKey="0">
-                                        <h5 className="mb-0">
-                                            <span className="icon"></span>
+                                    <Accordion.Toggle className="btn-link" as={Card.Header} onClick={() => this.addActiveClass1()} variant="link" eventKey="0">
+                                        <h5 className={this.state.activeClasses[0]? "active mb-0" : "inactive mb-0"}>
+                                            <span className={this.state.activeClasses[0]? "active icon" : "inactive icon"}></span>
                                             What is the Cardano ERC20 converter?
                                         </h5>
                                     </Accordion.Toggle>
@@ -52,9 +68,9 @@ undertaken by the founding team until launch. For some of the larger projects.
                                 </Card>
                                 <Card className="card animate__animated animate__fadeInUp">
                                     <Card.Header className="card-header">
-                                    <Accordion.Toggle className="btn-link" as={Card.Header} variant="link" eventKey="1">
-                                        <h5 className="mb-0">
-                                            <span className="icon"></span>
+                                    <Accordion.Toggle className="btn-link" as={Card.Header} onClick={() => this.addActiveClass2()} variant="link" eventKey="1">
+                                        <h5 className={this.state.activeClasses[1]? "active mb-0" : "inactive mb-0"}>
+                                            <span className={this.state.activeClasses[1]? "active icon" : "inactive icon"}></span>
                                             What are the differences between Automated Liquidity Protocol and DEX?
                                         </h5>
                                     </Accordion.Toggle>
@@ -69,9 +85,9 @@ undertaken by the founding team until launch. For some of the larger projects.
                                 </Card>
                                 <Card className="card animate__animated animate__fadeInUp">
                                     <Card.Header className="card-header">
-                                    <Accordion.Toggle className="btn-link" as={Card.Header} variant="link" eventKey="2">
-                                        <h5 className="mb-0">
-                                            <span className="icon"></span>
+                                    <Accordion.Toggle className="btn-link" as={Card.Header} onClick={() => this.addActiveClass3()} variant="link" eventKey="2">
+                                        <h5 className={this.state.activeClasses[2]? "active mb-0" : "inactive mb-0"}>
+                                            <span className={this.state.activeClasses[2]? "active icon" : "inactive icon"}></span>
                                             Why are all tokens ERC20?
                                         </h5>
                                     </Accordion.Toggle>

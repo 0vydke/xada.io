@@ -32,9 +32,9 @@ export default class SectionSolutions extends React.Component {
                 <div className="heading text-center">
                     <div className={ this.props.solutionsScroll } style={style.s1}>
                         <div className="title-div">
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         <h2 className="title">Problems and solutions</h2>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         </div>
                     </div>
                     <p className={`content-desc ${ this.props.solutionsScroll }`} style={style.s2}>The current Ethereum-focused status quo — where users are expected to accept 100-250$ <br className="d-none d-xl-block"/>gas fees and speeds of just 15 transactions/second — will soon be history.
@@ -83,7 +83,7 @@ anticipated to usher in a completely new way of doing business
 within the world of crypto.</p>
                             <p className={ this.props.solutionsScroll } style={style.s11}>As soon as Cardano rolls out smart contract support in 2021 Q3, XADA will
 be there, providing traders with access to a non-custodial protocol that
-facilitates quick token swapping, liquidity provision, and a wide-reaching
+facilitates quick token swap, liquidity provision, and a wide-reaching
 reorientation of the DeFi movement towards the Cardano Ecosystem.</p>
                         </div>
                     </div>

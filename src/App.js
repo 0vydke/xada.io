@@ -1,5 +1,4 @@
 import MainNavbar from './components/mainNavbar/mainNavbar';
-import ParticleContainer from './components/particles/particleContainer';
 import SectionHead from './components/sectionHead/sectionHead';
 import SectionAbout from './components/sectionAbout/sectionAbout';
 import SectionSolutions from './components/sectionSolutions/sectionSolutions';
@@ -21,14 +20,11 @@ import {
 function App() {
   const [navScroll, setOffset] = useState('');
   const [aboutScroll, setAbout] = useState('');
-  const [solutionsScroll, setSolutions] = useState('');
-
 
   useEffect(() => {
     window.onscroll = () => {
       setOffset((window.pageYOffset >= 100) ? 'scrolled' : '');
       setAbout((window.pageYOffset >= 850 || aboutScroll !== "animate__animated animate__fadeInUp") ? 'animate__animated animate__fadeInUp' : '');
-      setSolutions((window.pageYOffset >= 1698 || solutionsScroll !== "animate__animated animate__fadeInUp") ? 'animate__animated animate__fadeInUp' : '');
     };
   }, []);
   
@@ -39,12 +35,13 @@ function App() {
       <div className="App">
           <SectionHead/>
         <ScrollAnimation animateIn='fadeIn'
-        animateOnce={true}>
+        animateOnce={true}
+        delay={2000}>
           <SectionAbout aboutScroll={aboutScroll}/>
         </ScrollAnimation>
         <ScrollAnimation animateIn='fadeIn'
         animateOnce={true}>
-          <SectionSolutions solutionsScroll={solutionsScroll}/>
+          <SectionSolutions/>
         </ScrollAnimation>
         <ScrollAnimation animateIn='fadeIn'
         animateOnce={true}>

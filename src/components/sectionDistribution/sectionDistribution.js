@@ -22,39 +22,39 @@ export default class SectionDistribution extends React.Component {
       }
   render(){
     return (
-        <section id="token-distribution" class="token-distribution section-padding">
-            <div class="container">
-                <div class="heading text-center">
-                    <div class="animate__animated animate__fadeInUp" style={style.s1}>
+        <section id="token-distribution" className="token-distribution section-padding">
+            <div className="container">
+                <div className="heading text-center">
+                    <div className="animate__animated animate__fadeInUp" style={style.s1}>
                         <div className="title-div">
-                        <img src={line} className="title-line"/>
-                        <h2 class="title">Token distribution</h2>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
+                        <h2 className="title">Token distribution</h2>
+                        <img src={line} alt="blue line" className="title-line"/>
                         </div>
                     </div>
-                    <p class="content-desc animate__animated animate__fadeInUp" style={style.s2}>
-                    The ICO usually takes place before the project is completed, and helps fund the expenses<br class="d-none d-xl-block"/>
+                    <p className="content-desc animate__animated animate__fadeInUp" style={style.s2}>
+                    The ICO usually takes place before the project is completed, and helps fund the expenses<br className="d-none d-xl-block"/>
 undertaken by the founding team until launch. For some of the larger projects.
                     </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 pr-5"style={{display: 'flex'}}>
-                        <div class="content-area" style={{margin: 'auto'}}>
-                            <h4 class="title animate__animated animate__fadeInUp" style={style.s3}>Details</h4>
+                <div className="row">
+                    <div className="col-md-12 col-lg-6 pr-5"style={{display: 'flex'}}>
+                        <div className="content-area" style={{margin: 'auto'}}>
+                            <h4 className="title animate__animated animate__fadeInUp" style={style.s3}>Details</h4>
                             <br/>
-                            <p class="mt-1 animate__animated animate__fadeInUp" style={style.s4}>To calculate the number of tokens you’ll receive, you can follow the
+                            <p className="mt-1 animate__animated animate__fadeInUp" style={style.s4}>To calculate the number of tokens you’ll receive, you can follow the
                             following formula. Note that this applies to public presale contributions
                             only. If you participated through a syndicate or private presale</p>
-                            <p class="animate__animated animate__fadeInUp" style={style.s5}>To calculate the number of tokens you’ll receive, you can follow the
+                            <p className="animate__animated animate__fadeInUp" style={style.s5}>To calculate the number of tokens you’ll receive, you can follow the
                             following formula. Note that this applies to public presale contributions
                             only. If you participated through a syndicate or private presale</p>
-                            <p class="animate__animated animate__fadeInUp" style={style.s6}><span>Symbol:</span> <strong class="grey-accent2">CIC</strong></p>
-                            <p class="animate__animated animate__fadeInUp" style={style.s7}><span>Initial Value:</span> <strong class="grey-accent2">1 ETH = 3177.38 CIC</strong></p>
+                            <p className="animate__animated animate__fadeInUp" style={style.s6}><span>Symbol:</span> <strong className="grey-accent2">CIC</strong></p>
+                            <p className="animate__animated animate__fadeInUp" style={style.s7}><span>Initial Value:</span> <strong className="grey-accent2">1 ETH = 3177.38 CIC</strong></p>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6 move-first animate__animated animate__fadeInUp" style={style.s9}>
-                        <div class="token-img">
-                            <img class="img-fluid" src={chart} alt="token-distribution"/>
+                    <div className="col-md-12 col-lg-6 move-first animate__animated animate__fadeInUp" style={style.s9}>
+                        <div className="token-img">
+                            <img className="img-fluid" src={chart} alt="token-distribution"/>
                         </div>
                     </div>
                 </div>

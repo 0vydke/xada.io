@@ -7,7 +7,9 @@ h6,
 p {
     font-family: 'Poppins', sans-serif;
 }
-
+.swiper-button-next, .swiper-button-prev{
+    margin-top: calc(-5px - (var(--swiper-navigation-size)/ 2)) !important;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
     position: absolute;
@@ -78,6 +80,14 @@ span.date {
     .swiper-button-next,
     .swiper-container-rtl,
     .swiper-button-prev {
-        top: 9% !important;
+        top: 13% !important;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .swiper-button-next,
+    .swiper-container-rtl,
+    .swiper-button-prev {
+        top: 14% !important;
     }
 }

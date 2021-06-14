@@ -8,20 +8,21 @@ p,.card-body {
     font-family: 'Poppins', sans-serif;
 }
 
-.faq .collapse-icon .btn-link h5.mb-0 .icon:after {
-    // content : '\e622';
-}
-
 .faq .collapse-icon .btn-link h5.mb-0 .icon:before {
     content: '\e61a';
+    transition: 0.2s;
+}
+.active.icon:before{
+    content: "\e622" !important;
+    transition: 0.2s;
 }
 
-.faq .collapse-icon .btn-link h5.mb-0:before {
+.faq .collapse-icon .btn-link h5.inactive.mb-0:before {
     content: '\e64b';
 }
 
-.faq .collapse-icon .btn-link h5.mb-0:after {
-    // content : '\e648';
+.faq .collapse-icon .btn-link h5.active.mb-0:before {
+    content : '\e648';
 }
 
 .faq .collapse-icon a[aria-expanded='true']:before,

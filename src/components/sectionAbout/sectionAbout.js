@@ -23,24 +23,23 @@ export default class SectionAbout extends React.Component {
         };
       }
   render(){
-    
     return (
         <section className="about section-padding-1" id="about">
             <div className="container">
                 <div className="heading text-center">
-                    <div className={ this.props.aboutScroll } style={style.s1}>
+                    <div style={style.s1}>
                         <div style={style.s9}>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         <h2 className="title">About Xada</h2>
-                        <img src={line} className="title-line"/>
+                        <img src={line} alt="blue line" className="title-line"/>
                         </div>
                     </div>
-                    <p className="content-desc animate__animated animate__fadeInUp" style={style.s2}>XADA is an automated liquidity protocol based on the Cardano ecosystem, <br class="d-none d-xl-block"></br>facilitating completely decentralized and non-custodial trading.</p>
+                    <p className="content-desc animate__animated animate__fadeInUp" style={style.s2}>XADA is an automated liquidity protocol based on the Cardano ecosystem, <br className="d-none d-xl-block"></br>facilitating completely decentralized and non-custodial trading.</p>
                 </div>
                 <div className="content-area">
                     <div className="row">
                         <div className="col-md-12 col-lg-5 animate__animated animate__fadeInUp" style={{display:'flex'}}>
-                            <img src={about} style={style.s8} className="resp-img" />
+                            <img src={about} alt="xada and cardano logos inside half circles" style={style.s8} className="resp-img section-img0"/>
                         </div>
                         <div className="col-md-12 col-lg-7 animate__animated animate__fadeInUp" style={{display: 'flex'}}>
                             <div style={{margin: 'auto'}}>
